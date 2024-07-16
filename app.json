@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "expo-api-router-postgres-deployment",
+    "slug": "expo-api-router-postgres-deployment",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "scheme": "expo-api-router-postgres-deployment",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "server"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d81f641b-8cc2-40c8-9f38-59c281a2dca5"
+      }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "newArchEnabled": true
+          },
+          "android": {
+            "newArchEnabled": true
+          }
+        }
+      ],
+      [
+        "expo-router",
+        {
+          "origin": "https://expo-api-router-postgres-deployment.vercel.app"
+        }
+      ]
+    ]
+  }
+}
