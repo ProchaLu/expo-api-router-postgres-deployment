@@ -11,6 +11,9 @@ importers:
       '@expo-google-fonts/pacifico':
         specifier: ^0.2.3
         version: 0.2.3
+      '@expo/server':
+        specifier: 0.4.4-canary-20240628-1ba8152
+        version: 0.4.4-canary-20240628-1ba8152(typescript@5.5.3)
       '@upleveled/ley':
         specifier: ^0.8.6
         version: 0.8.6
@@ -1102,6 +1105,9 @@ packages:
 
   '@expo/server@0.4.4':
     resolution: {integrity: sha512-q9ADBzMN5rZ/fgQ2mz5YIJuZ8gelQlhG2CQqToD+UvBLZvbaHCNxTTSs2KI1LzJvAaW5CWgWMatGvGF6iUQ0LA==}
+
+  '@expo/server@0.4.4-canary-20240628-1ba8152':
+    resolution: {integrity: sha512-ZdLsC2MSrDQgG448Bckdd4aoLgZ1fkf2kzPTB50XeKWVACBbvnjQhAZEjINceuD302M8k3Lq+fnxDriLyQ/MbQ==}
 
   '@expo/spawn-async@1.7.2':
     resolution: {integrity: sha512-QdWi16+CHB9JYP7gma19OVVg0BFkvU8zNj9GjWorYI8Iv8FUxjOCcYRuAmX4s/h91e4e7BPsskc8cSrZYho9Ew==}
@@ -6925,6 +6931,16 @@ snapshots:
   '@expo/sdk-runtime-versions@1.0.0': {}
 
   '@expo/server@0.4.4(typescript@5.5.3)':
+    dependencies:
+      '@remix-run/node': 2.10.3(typescript@5.5.3)
+      abort-controller: 3.0.0
+      debug: 4.3.5
+      source-map-support: 0.5.21
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+
+  '@expo/server@0.4.4-canary-20240628-1ba8152(typescript@5.5.3)':
     dependencies:
       '@remix-run/node': 2.10.3(typescript@5.5.3)
       abort-controller: 3.0.0

@@ -24,6 +24,26 @@ Error: Command "pnpm migrate up && expo export -p web && sed -i 's/"type": "modu
 - add `api/index.ts` file 
 - add `vercel.json` file
 
+- add @expo/server patch
+
+Without patching with `.flat()` it will fail with
+
+```bash
+Unhandled Rejection: TypeError: The argument 'headers' is invalid. Received [ [ 'content-type', 'text/html' ] ]
+    at ServerResponse.writeHead (node:_http_server:373:15)
+    at ServerResponse.n.writeHead (/opt/rust/nodejs.js:8:2972)
+    at respond (/var/task/node_modules/@expo/server/build/vendor/vercel.js:62:9)
+    at /var/task/node_modules/@expo/server/build/vendor/vercel.js:16:16
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Server.<anonymous> (/opt/rust/nodejs.js:1:10464)
+    at Server.<anonymous> (/opt/rust/nodejs.js:8:3933) {
+  code: 'ERR_INVALID_ARG_VALUE'
+}
+Node.js process exited with exit status: 128. The logs above can help with debugging the issue.
+```
+
+
+
 ## Vercel 
 
 - add postgres storage
