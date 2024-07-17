@@ -10,3 +10,9 @@
 
 - add react-dom
 - add react-native-web
+
+## Vercel 
+
+- add postgres storage
+- select frankfurt
+- redeploy 
