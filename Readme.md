@@ -15,4 +15,4 @@
 
 - add postgres storage
 - select frankfurt
-- redeploy 
+- redeploy
